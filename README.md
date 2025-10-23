@@ -28,14 +28,14 @@ By quantifying this difference, we can reveal:
 
 ## Data Cleaning & Preparation  
 1. **Integrity Filtering**:
-  - Removed duplicate entries and laps marked as inaccurate (IsAccurate=False).
-  - Dropped rows with missing or zero timing data.
+    - Removed duplicate entries and laps marked as inaccurate (IsAccurate=False).
+    - Dropped rows with missing or zero timing data.
 2. **Standardization**:
-  - Converted column names to snake_case.
-  - Optimized string columns (driver, circuit) as categorical types.
+    - Converted column names to snake_case.
+    - Optimized string columns (driver, circuit) as categorical types.
 3. **Timing Consistency**:
-  - Verified the sum of sector times matched total lap_time within ±0.1s tolerance.
-  - Confirmed no timing anomalies across circuits.
+    - Verified the sum of sector times matched total lap_time within ±0.1s tolerance.
+    - Confirmed no timing anomalies across circuits.
 
 This produced a clean and consistent dataset suitable for time-based and comparative analysis.
 
@@ -92,4 +92,5 @@ f1-ideal-lap/
 
 ## License  
 This project is released under the **MIT License**.
+
 You are free to use, modify, and distribute the code with proper attribution.
